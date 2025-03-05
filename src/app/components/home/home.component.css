@@ -1,0 +1,69 @@
+ /* Custom Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    color: white;
+}
+.login-btn {
+    background: white;
+    color: #007bff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.login-btn:hover {
+    background: #0056b3;
+    color: white;
+}
+/* Main Section Styling */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+.text-section {
+    flex: 1;
+    max-width: 500px;
+    padding-right: 20px;
+}
+.text-section h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: bold;
+}
+.text-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+.image-section {
+    flex: 1;
+    text-align: center;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-section {
+        padding-right: 0;
+    }
+}
