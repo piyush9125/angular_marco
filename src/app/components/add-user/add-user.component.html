@@ -1,1 +1,61 @@
-<p>add-user works!</p>
+<app-admin-menu></app-admin-menu>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h3 class="text-center">Add User</h3>
+            <form>
+                <div class="row">
+                    <!-- Left Section -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username" name="username" [(ngModel)]="user.username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" name="password" [(ngModel)]="user.password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="role" class="form-label">Role</label>
+                            <select class="form-select" id="role" name="role" [(ngModel)]="user.role" required>
+                                <option value="" disabled selected>Select Role</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Faculty">Faculty</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name" name="firstName" [(ngModel)]="user.firstName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" name="lastName" [(ngModel)]="user.lastName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="email" [(ngModel)]="user.email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button (click)="register_user('user')" type="submit" class="btn btn-primary w-100 mt-3">Add User</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

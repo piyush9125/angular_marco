@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.custom-navbar {
+    background: rgba(57, 93, 172, 0.9);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-list h3 {
+    color: white;
+    margin: 0;
+    padding-right: 20px;
+    font-size: 20px;
+}
+.nav-list li {
+    display: inline;
+}
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out;
+}
+.nav-list a:hover {
+    background: hsl(218, 42%, 25%);
+    border-radius: 5px;
+}
+.logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+.content {
+    padding: 100px 20px;
+    text-align: center;
+}
+.content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+}
+.full-width-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 30px;
+    border-radius: 10px;
+}
