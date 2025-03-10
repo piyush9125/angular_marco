@@ -27,13 +27,15 @@
             <tbody>
                 <tr *ngFor="let user of userlist">
                     <td>{{user.username}}</td>
-                    <td>{{user.password}}</td>
+                    <td>{{user.password | hidePassword}}</td>
                     <td>{{user.firstName}}</td>
                     <td>{{user.lastName}}</td>
                     <td>{{user.email}}</td>
                     <td>{{user.role}}</td>
                     <td>
-                        <button class="btn btn-warning btn-sm">Update</button>
+                        <!-- <a class="btn btn-warning btn-sm" routerLink="/edit-user/[`username`]">Update</a> -->
+                        <a class="btn btn-warning btn-sm" [routerLink]="['/edit-user', user.username]">Update</a>
+
                         <button  (click)="deleteuser(user.username)"   class="btn btn-danger btn-sm">Delete</button>
                     </td>
                 </tr>

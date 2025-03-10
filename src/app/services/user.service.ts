@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -31,6 +31,22 @@ deleteuser(username:string):Observable<any>{
 const durl=`http://localhost:8091/user/delete-user-by-username?username=${username}`;
 return this.http.delete(durl,{'responseType':'text'});
 }
+
+get_user(username:any):Observable<any>{
+  const g_url=`http://localhost:8091/user/get-user-by-username/${username}`;
+return this.http.get(g_url);
+}
+
+Update_user(user:any):Observable<any>{
+  const u_url='http://localhost:8091/user/update-user';
+return this.http.put(u_url,user);
+}
+// Update_user(user: any): Observable<any> {
+//   const u_url = 'http://localhost:8091/user/update-user';
+//   return this.http.put(u_url, JSON.stringify(user), {
+//     headers: new HttpHeaders({ 'Content-Type': 'application/json' }) // Ensure JSON format
+//   });
+// }
 
 
 

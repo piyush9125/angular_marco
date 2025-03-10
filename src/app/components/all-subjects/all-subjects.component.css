@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa; /* Light background for the body */
+}
+.container {
+    margin-top: 50px; /* Space above the container */
+}
+.table-custom {
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.table-custom th {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text for header */
+    text-align: center; /* Center align header text */
+}
+.table-custom td {
+    text-align: center; /* Center align table data */
+}
+.action-link {
+    margin: 0 5px; /* Space between action buttons */
+}

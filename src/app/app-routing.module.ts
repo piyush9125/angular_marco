@@ -38,7 +38,7 @@ const routes: Routes = [
   component:AllUsersComponent  },
 
 {
-  path:'edit-user',
+  path:'edit-user/:username',
   component:EditUserComponent
 },
   {
