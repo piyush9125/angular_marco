@@ -1,1 +1,34 @@
-<p>edit-subject works!</p>
+<app-admin-menu></app-admin-menu>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Mode Update Subject</title>
+    
+   
+</head>
+<body>
+
+    <div class="form-container">
+        <h4 class="text-center hacker-title">Update Subject</h4>
+        <form>
+            <!-- ID Field (Read-Only) -->
+            <div class="mb-3">
+                <label for="id" class="form-label">ID:</label>
+                <input type="text" class="form-control hacker-input" id="id" name="id" [(ngModel)]="subject.id" readonly>
+            </div>
+
+            <!-- Name Field -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control hacker-input" id="name" name="name" [(ngModel)]="subject.name">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" (click)="update_subject()" class="btn hacker-button w-100">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

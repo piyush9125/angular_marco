@@ -23,8 +23,21 @@ export class SubjectService {
 
   }
 
-  delete_subject(id:any):Observable<any>{
+delete_subject(id:any):Observable<any>{
 const url=`http://localhost:8091/subject/delete-subject/${id}`;
-return this.http.delete(url,{responseType:'text'});
+return this.http.delete(url);
   }
+
+
+get_subject(subjectId:any):Observable<any>{
+const url=`http://localhost:8091/subject/get-subject-by-id/${subjectId}`
+return this.http.get(url);
+}
+
+update_subject(subject:any):Observable<any>{
+  const url='http://localhost:8091/subject/update-subject';
+  return this.http.put(url,subject);
+}
+
+
 }

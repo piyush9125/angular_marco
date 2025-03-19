@@ -1,1 +1,28 @@
-<p>edit-student works!</p>
+
+<app-faculty-menu></app-faculty-menu>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Style Student Update Form</title>
+    
+</head>
+<body>
+
+    <h2>Student Update Form </h2>
+    <form class="hacker-form">
+        <div class="mb-3">
+            <label for="name" class="form-label">👨‍🎓 Name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" [(ngModel)]="student.name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">📧 Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" [(ngModel)]="student.email" required email>
+        </div>
+        <button type="submit" class="btn hacker-btn" (click)="update_student()">Update</button>
+    </form>
+    
+</body>
+</html>
+

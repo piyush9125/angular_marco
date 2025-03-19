@@ -1,2 +1,37 @@
-<app-admin-menu></app-admin-menu>
-<p>all-students works!</p>
+<app-faculty-menu></app-faculty-menu>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="hacker-header text-center">STUDENT LIST</div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let stude of student; let i = index">
+                    <td>{{ stude.id }}</td>
+                    <td>{{ stude.name }}</td>
+                    <td>{{ stude.email }}</td>
+                    <td>
+                        <a [routerLink]="['/edit-student',stude.id]" class="btn btn-warning">Update</a>
+                        <button class="btn btn-danger" (click)="deleteStudent(stude.id)" type="submit">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+ 
+</body>
+</html>

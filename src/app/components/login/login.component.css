@@ -1,36 +1,70 @@
-/* Background Styling */
+/* Entire Page - Full Black Background */
 body {
-    background: linear-gradient(135deg, #007bff, #00d4ff);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #000 !important;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 5px #00ff00;
 }
-/* Login Form Styling */
+
+/* Login Container */
 .login-container {
-    background: white;
-    padding: 30px;
+    background: black;
+    border: 2px solid #00ff00;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 400px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+/* Hacker Title */
+.hacker-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 8px #00ff00;
+    animation: glitch 1.5s infinite alternate;
+}
+
+/* Input Fields */
+.hacker-input {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 8px #00ff00;
     text-align: center;
 }
-.login-container h2 {
-    color: #007bff;
-    margin-bottom: 20px;
+
+.hacker-input::placeholder {
+    color: #00ff00;
+    opacity: 0.8;
 }
-.form-control {
-    border-radius: 25px;
-}
-.btn-login {
-    background: #007bff;
-    color: white;
-    border-radius: 25px;
-    padding: 10px;
+
+/* Hacker Button */
+.hacker-button {
+    background: black;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    text-transform: uppercase;
     font-weight: bold;
+    box-shadow: 0 0 15px #00ff00;
     transition: 0.3s;
+    animation: pulse 1.5s infinite alternate;
 }
-.btn-login:hover {
-    background: #0056b3;
+
+.hacker-button:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #00ff00, -2px -2px #ff00ff; }
+    50% { text-shadow: -2px -2px #00ff00, 2px 2px #ff00ff; }
+    100% { text-shadow: 2px -2px #00ff00, -2px 2px #ff00ff; }
+}
+
+/* Pulsating Button Effect */
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #00ff00; }
+    100% { box-shadow: 0 0 20px #00ff00; }
 }

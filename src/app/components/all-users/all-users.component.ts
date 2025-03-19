@@ -22,11 +22,20 @@ userlist:any[]=[]
 
 
   deleteuser(username:any){
-    this.userservice.deleteuser(username).subscribe((res)=>{
-      alert(username+" deleted sucessfully completed");
-      this.alluser();
+    const confirmation=confirm('do you want to delete user?');
 
-    }) 
+    if(confirmation){
+      this.userservice.deleteuser(username).subscribe(
+        (res)=>{
+        alert(username+" deleted sucessfully completed");
+        this.alluser();},
+      (error)=>{
+        alert(username+' deleted failed');
+        this.alluser();
+      }) 
+
+    }
+   
   }
 
 

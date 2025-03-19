@@ -23,6 +23,7 @@ this.subjectservice.all_subject().subscribe((res)=>{
  }
  delete_subject(id: any){
   alert('subject  deleted sucessfully completed');
+  console.log(id);
   this.subjectservice.delete_subject(id).subscribe((res)=>{
     this.all_subject();
   })

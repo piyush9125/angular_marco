@@ -11,6 +11,9 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { AllSubjectsComponent } from './components/all-subjects/all-subjects.component';
 import { EditSubjectComponent } from './components/edit-subject/edit-subject.component';
 import { ViewAllAttendanceComponent } from './components/view-all-attendance/view-all-attendance.component';
+import { AddStudentComponent } from './components/add-student/add-student.component';
+import { AllStudentsComponent } from './components/all-students/all-students.component';
+import { EditStudentComponent } from './components/edit-student/edit-student.component';
 
 const routes: Routes = [
   {
@@ -49,11 +52,26 @@ const routes: Routes = [
     path:'all-subject',
     component:AllSubjectsComponent
   },{
-    path:'edit-subject',
+    path:'edit-subject/:id',
     component:EditSubjectComponent
   },{
     path:'view-all-attendace',
     component:ViewAllAttendanceComponent
+  },
+  {path:'faculty-menu',
+    component:AddStudentComponent
+  },
+  {
+    path:'add-student',
+    component:AddStudentComponent
+  },
+  {
+    path:'all-student',
+    component:AllStudentsComponent
+  },
+  {
+    path:'edit-student/:id',
+    component:EditStudentComponent
   }
 ];
 

@@ -1,0 +1,41 @@
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+.hacker-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff00;
+}
+.hacker-form label {
+    font-weight: bold;
+}
+.hacker-form input {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    font-family: 'Courier New', monospace;
+}
+.hacker-form input:focus {
+    background: black;
+    color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    border: 2px solid #00ff00;
+}
+.hacker-btn {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    font-weight: bold;
+}
+.hacker-btn:hover {
+    background: #00ff00;
+    color: black;
+    box-shadow: 0 0 10px #00ff00;
+}

@@ -4,24 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Subject Form</title>
+    <title>Hacker Subject Form</title>
+
    
 </head>
 <body>
 
-<div class="form-container">
-    <h4 class="text-center mb-4">Add Subject</h4>
-    
+    <div class="form-container">
+        <h4 class="text-center mb-4">Add Subject</h4>
         <div class="mb-3">
-            <label for="id" class="form-label">ID</label>
-            <input type="text" class="form-control" id="id" placeholder="Enter subject ID" [(ngModel)]="subject.id">
-        </div>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">Subject Name</label>
             <input type="text" class="form-control" id="name" placeholder="Enter subject name" [(ngModel)]="subject.name">
         </div>
         <button (click)="add_subject()" type="submit" class="btn btn-primary w-100">Submit</button>
-    
-</div>
+    </div>
 </body>
 </html>

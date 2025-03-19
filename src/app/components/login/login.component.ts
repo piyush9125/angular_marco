@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 
@@ -15,6 +16,7 @@ export class LoginComponent {
     password: ''
   };
 
+  
   login(){
     this.userservice.login(this.user).subscribe((res)=>{
       if(res!=null){

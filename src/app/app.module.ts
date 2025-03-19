@@ -22,7 +22,7 @@ import { AllStudentsComponent } from './components/all-students/all-students.com
 import { EditStudentComponent } from './components/edit-student/edit-student.component';
 import { TakeAttendanceComponent } from './components/take-attendance/take-attendance.component';
 import { ViewAttendanceComponent } from './components/view-attendance/view-attendance.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HidePasswordPipe } from './pipes/hide-password.pipe';
 
@@ -54,7 +54,8 @@ import { HidePasswordPipe } from './pipes/hide-password.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

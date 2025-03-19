@@ -1,69 +1,68 @@
- /* Custom Styles */
- body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+/* Entire Page - Black Background with Green Hacker Theme */
+body {
+    background-color: #000 !important;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 5px #00ff00;
 }
-/* Header Styling */
+
+/* Header Section */
 .header {
+    background: black;
+    border-bottom: 2px solid #00ff00;
+    padding: 15px;
+    box-shadow: 0 0 15px #00ff00;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: linear-gradient(90deg, #007bff, #00d4ff);
-    color: white;
 }
-.login-btn {
-    background: white;
-    color: #007bff;
-    border-radius: 25px;
-    padding: 10px 20px;
+
+.hacker-title {
+    text-shadow: 0 0 8px #00ff00;
     font-weight: bold;
-    text-decoration: none;
+}
+
+/* Hacker Button */
+.hacker-button {
+    background: black;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00ff00;
     transition: 0.3s;
+    animation: pulse 1.5s infinite alternate;
 }
-.login-btn:hover {
-    background: #0056b3;
-    color: white;
+
+.hacker-button:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
 }
-/* Main Section Styling */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-}
-.text-section {
-    flex: 1;
-    max-width: 500px;
-    padding-right: 20px;
-}
-.text-section h1 {
-    font-size: 2.5rem;
-    color: #007bff;
+
+/* Hacker Heading */
+.hacker-heading {
+    font-size: 2rem;
+    text-shadow: 0 0 15px #00ff00;
     font-weight: bold;
 }
-.text-section p {
+
+/* Hacker Text */
+.hacker-text {
     font-size: 1.2rem;
-    color: #333;
-    margin-top: 10px;
+    text-shadow: 0 0 10px #00ff00;
 }
-.image-section {
-    flex: 1;
-    text-align: center;
-}
-.image-section img {
+
+/* Image Section */
+.hacker-image {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 20px #00ff00;
 }
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .text-section {
-        padding-right: 0;
-    }
+
+/* Pulsating Button Effect */
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #00ff00; }
+    100% { box-shadow: 0 0 20px #00ff00; }
 }

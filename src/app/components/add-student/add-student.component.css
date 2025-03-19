@@ -1,0 +1,35 @@
+body {
+    background-color: #0d0d0d;
+    color: #00ff00;
+    font-family: "Courier New", monospace;
+}
+.hacker-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+    margin-bottom: 20px;
+}
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #00ff00;
+}
+.card-header {
+    background-color: #00ff00;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+.form-control {
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+.btn-hacker {
+    background-color: #00ff00;
+    color: #000;
+    font-weight: bold;
+}
+.btn-hacker:hover {
+    background-color: #009900;
+}

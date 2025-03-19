@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker User Table</title>
+    
 
-    <title>User Table</title>
 </head>
 <body>
 
-<div class="container">
-    <h2 class="text-center mb-4">User  Table</h2>
-    <table class="table table-bordered table-custom">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let subject of subjectlist">
-                <td>{{subject.id}}</td>
-                <td>{{subject.name}}</td>
-                <td>
-                    <a routerLink="#" class="btn btn-warning action-link">Update</a>
-                    <button (click)="delete_subject(subject.id)"  type="submit"    class="btn btn-danger action-link">Delete</button>
-                </td>
-            </tr>
-            
-        </tbody>
-    </table>
-</div>
+    <div class="container mt-4">
+        <h2 class="text-center mb-4 hacker-title">User Table</h2>
+        
+        <table class="table table-bordered table-hover hacker-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let subject of subjectlist">
+                    <td>{{subject.id}}</td>
+                    <td>{{subject.name}}</td>
+                    <td>
+                        <a [routerLink]="['/edit-subject', subject.id]" class="btn btn-warning hacker-button">Update</a>
+                        <button (click)="delete_subject(subject.id)" type="submit" class="btn btn-danger hacker-button">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 </html>

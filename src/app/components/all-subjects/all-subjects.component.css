@@ -1,22 +1,83 @@
 body {
-    background-color: #f8f9fa; /* Light background for the body */
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Orbitron', monospace;
+    text-shadow: 0 0 5px #00ff00;
 }
+
 .container {
-    margin-top: 50px; /* Space above the container */
+    margin-top: 50px;
+    max-width: 90%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00;
 }
-.table-custom {
-    background-color: #ffffff; /* White background for the table */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px #00ff00;
+    overflow: hidden;
 }
-.table-custom th {
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* White text for header */
-    text-align: center; /* Center align header text */
+
+th, td {
+    border: 2px solid #00ff00;
+    padding: 10px;
+    text-align: center;
 }
-.table-custom td {
-    text-align: center; /* Center align table data */
+
+thead {
+    background: #000;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    animation: flicker 2s infinite alternate;
 }
-.action-link {
-    margin: 0 5px; /* Space between action buttons */
+
+tbody tr:hover {
+    background: rgba(0, 255, 0, 0.1);
+    text-shadow: 0 0 5px #00ff00;
+    transition: 0.3s;
+}
+
+/* Glitch Effect */
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+/* Buttons */
+.btn-warning, .btn-danger {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-warning {
+    background: transparent;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ffcc00;
+}
+
+.btn-warning:hover {
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+.btn-danger {
+    background: transparent;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+.btn-danger:hover {
+    background: #ff0000;
+    color: #000;
+    box-shadow: 0 0 10px #ff0000;
 }

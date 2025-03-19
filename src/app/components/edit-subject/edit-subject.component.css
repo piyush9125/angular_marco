@@ -1,0 +1,77 @@
+/* Entire Page - Full Black Background */
+body {
+    background-color: #000 !important;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* Hacker Title */
+.hacker-title {
+    text-shadow: 0 0 10px #00ff00;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 10px;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: black;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff00;
+    text-align: center;
+}
+
+/* Input Fields */
+.hacker-input {
+    background: black;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    transition: 0.3s;
+}
+
+.hacker-input:focus {
+    background: black;
+    color: #00ff00;
+    border-color: #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Read-Only ID Field */
+#id {
+    background: #222;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Hacker Button */
+.hacker-button {
+    background: black;
+    border: 2px solid #00ff00;
+    color: #00ff00;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00ff00;
+    transition: 0.3s;
+    animation: pulse 1.5s infinite alternate;
+}
+
+.hacker-button:hover {
+    background: #00ff00;
+    color: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+/* Pulsating Button Effect */
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px #00ff00; }
+    100% { box-shadow: 0 0 20px #00ff00; }
+}
